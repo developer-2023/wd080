@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .outer {
-            border: 20px solid rgb(230, 230, 205);
+        .box {
+            border: 20px solid lightslategrey;
             background-color: beige;
             padding: 20px;
             width: 100%;
+            margin-bottom: 8px;
+            font-size: xx-large;
+        }
+        .content-box {
+            box-sizing: content-box;
+        }
+        .border-box {
             box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <div class="outer">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, corporis corrupti. Natus esse totam est laboriosam mollitia architecto voluptatum, cupiditate aperiam, quam, quo blanditiis. Repellat aperiam illum quas repellendus voluptatibus iusto quod et eum adipisci porro at obcaecati, laborum quia natus tempora quo nisi, sapiente minima perferendis temporibus ea dolorem dolores. Saepe quia rerum tenetur obcaecati temporibus, quam alias quos mollitia? Officiis non laboriosam dolor cum voluptates eveniet porro iure similique facere doloribus, eum nobis voluptatum, incidunt aliquid tenetur magni a cupiditate distinctio modi repellat eligendi ad. Eveniet tempora neque ipsum possimus beatae similique deserunt sed, quo consequatur doloremque corporis.
+    <div class="box content-box">
+        box-sizing: content-box (default)
+    </div>
+    <div class="box border-box">
+        box-sizing: border-box
     </div>
 </body>
 </html>
